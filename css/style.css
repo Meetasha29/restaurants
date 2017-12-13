@@ -1,5 +1,7 @@
+
+/* default*/
 body{
-  background-color: rgb(190, 162, 106);
+  background-color: #f9f9f9;
   font-size: 2em;
   font-style: italic;
   font-family: serif;
@@ -7,9 +9,230 @@ body{
 }
 
 #header-nav{
-  background-color: rgb(65, 96, 149);
+  background-color: white;
   border-radius: 0;
   border: 0;
+}
 
+#logoImg{
+  background: url("/image/logo.jpeg") no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0px;
+}
+
+#star-img{
+  height: 20px;
+  width: 20px;
+}
+
+.navbar-brand{
+  padding-top: 25px;
+}
+
+.navbar-brand h1{
+  font-family: 'lora' serif;
+  color: #212529;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #212529;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+
+.navbar-brand p{
+  margin-top: 15px;
+  font-size: .7em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.navbar-brand p span{
+  vertical-align: middle;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+
+#nav-list a{
+  color: #212529;
+  text-align: center;
+}
+
+#nav-list a:hover{
+  background: #E7E7E7;
+}
+
+#nav-list a span{
+  font-size:1.3em
+}
+
+#phone{
+  margin-top: 5px;
+}
+
+#phone a{
+  text-align: right;
+  padding-bottom: 0px;
+}
+#phone div{
+  color: #212529;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -40px;
+}
+
+/*Home page*/
+#call-btn > a{
+  font-size: 1.5em;
+  display: block;
+  margin: 0 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: rgb(204, 204, 204);
+  color: black;
+}
+
+#xs-deliver{
+  margin-top: 5px;
+  font-size: .7em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.container .jumbotron{
+  box-shadow: 0 0 50px white;
+  border: 2px solid white;
+}
+
+#menu-tile,#specials-tile,#map-tile{
+  height: 250px;
+  width:100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #f9f9f9;
+  overflow: hidden;
+}
+
+#menu-tile:hover,#specials-tile:hover,#map-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile{
+  background: url("/image/menu.jpg") no-repeat;
+  background-position: center;
+}
+
+#specials-tile{
+  background: url("/image/special1.png") no-repeat;
+  background-position: center;
 
 }
+
+#menu-tile span,#specials-tile span,#map-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'lora' serif;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+}
+
+/*end home page*/
+
+
+
+@media (max-width: 992px){
+  #collapsable-nav li{
+    margin-top: 15px;
+  }
+  #collapsable-nav a{
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span{
+      font-size: 1em;
+      margin-right: 5px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px)
+{
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 4vw;
+  }
+  .navbar-brand p{
+    text-transform: uppercase;
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img{
+    height: 20px;
+  }
+  #menu-tile,#specials-tile,#map-tile{
+    height: 200px;
+    width:93%;
+    margin-left: 20px;
+  }
+}
+/* Extra small devices*/
+@media (max-width: 767px){
+  .container .jumbotron{
+    padding: 0px 0px;
+  }
+ }
+
+/* Small devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .jumbotron{
+    background: url("/image/jumbotron3.jpg") no-repeat;
+    height: 432px;
+  }
+ }
+
+/* Medium devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px){
+  #logoImg{
+    background: url("/image/logo.jpeg") no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 5px 5px 5px 0px;
+   }
+   .container .jumbotron{
+     background: url("/image/jumbotron3.jpg") no-repeat;
+     height: 558px;
+   }
+}
+/*large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .container .jumbotron{
+    background: url("/image/jumbotron3.jpg") no-repeat;
+    height: 540px;
+  }
+ }
