@@ -1,9 +1,8 @@
 
 /* default*/
 body{
-  background-color: #f9f9f9;
-  font-size: 2em;
-  font-style: italic;
+  background-color: rgb(249, 249, 249);
+  font-size: 1.8em;
   font-family: serif;
   text-align: justify;
 }
@@ -15,7 +14,6 @@ body{
 }
 
 #logoImg{
-  background: url("/image/logo.jpeg") no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0px;
@@ -31,12 +29,12 @@ body{
 }
 
 .navbar-brand h1{
-  font-family: 'lora' serif;
-  color: #212529;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #212529;
+
+  font-family: 'Cormorant Upright';
+  color: rgb(0, 0, 0);
+  font-size: 1.8em;
+  font-weight: 500;
+  text-shadow: .5px .5px .5px rgb(119, 118, 102);
   margin-top: 0px;
   margin-bottom: 0px;
   line-height: .75;
@@ -47,6 +45,7 @@ body{
 }
 
 .navbar-brand p{
+  font-family: 'Cormorant Upright';
   margin-top: 15px;
   font-size: .7em;
   color: #000;
@@ -62,7 +61,7 @@ body{
 }
 
 #nav-list a{
-  color: #212529;
+  color: rgb(69, 69, 69);
   text-align: center;
 }
 
@@ -71,18 +70,23 @@ body{
 }
 
 #nav-list a span{
-  font-size:1.3em
+  font-size:1.2em
 }
-
+#glyphicon-name{
+  font-family: 'Cormorant Upright';
+}
 #phone{
   margin-top: 5px;
 }
 
 #phone a{
+
   text-align: right;
   padding-bottom: 0px;
 }
 #phone div{
+  font-family: 'Cormorant Upright';
+  font-weight: 600;
   color: #212529;
   text-align: right;
   padding-right: 15px;
@@ -97,14 +101,47 @@ body{
   margin-top: -40px;
 }
 
+/* footer*/
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  color: rgb(242, 229, 207);
+}
+
+.panel-footer .row{
+  margin-bottom: 35px;
+}
+
+#hours, #address{
+  line-height: 2;
+}
+#hours >span, #address > span{
+  font-size: 1.3em;
+}
+#address p{
+  color: #557c3e;
+  font-size: .9em;
+  line-height: 1.6;
+}
+#testimonials{
+  font-style: italic;
+}
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+/*end of footer*/
+
 /*Home page*/
 #call-btn > a{
   font-size: 1.5em;
   display: block;
   margin: 0 20px;
   padding: 10px;
-  border: 2px solid #fff;
-  background-color: rgb(204, 204, 204);
+  border: 2px solid rgb(228, 232, 240);
+  background-color: rgb(184, 191, 196);
   color: black;
 }
 
@@ -116,8 +153,9 @@ body{
 }
 
 .container .jumbotron{
-  box-shadow: 0 0 50px white;
-  border: 2px solid white;
+  box-shadow: 0 0 50px rgb(228, 232, 240);
+  border: 2px solid rgb(228, 232, 240);
+  padding: 0px 0px;
 }
 
 #menu-tile,#specials-tile,#map-tile{
@@ -125,12 +163,12 @@ body{
   width:100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #f9f9f9;
+  border: 2px solid rgb(228, 232, 240);
   overflow: hidden;
 }
 
 #menu-tile:hover,#specials-tile:hover,#map-tile:hover{
-  box-shadow: 0 1px 5px 1px #cccccc;
+  box-shadow: 0 1px 5px 1px rgb(155, 169, 171);
 }
 
 #menu-tile{
@@ -176,65 +214,89 @@ body{
 
 }
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 767px)
-{
-  .navbar-brand{
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1{
-    padding-top: 10px;
-    font-size: 4vw;
-  }
-  .navbar-brand p{
-    text-transform: uppercase;
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img{
-    height: 20px;
-  }
-  #menu-tile,#specials-tile,#map-tile{
-    height: 200px;
-    width:93%;
-    margin-left: 20px;
-  }
-}
-/* Extra small devices*/
-@media (max-width: 767px){
-  .container .jumbotron{
-    padding: 0px 0px;
-  }
- }
-=======
-  
 
-/* Small devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .container .jumbotron{
-    background: url("/image/jumbotron3.jpg") no-repeat;
-    height: 432px;
-  }
- }
 
-/* Medium devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px){
-  #logoImg{
-    background: url("/image/logo.jpeg") no-repeat;
-    width: 80px;
-    height: 80px;
-    margin: 5px 5px 5px 0px;
-   }
-   .container .jumbotron{
-     background: url("/image/jumbotron3.jpg") no-repeat;
-     height: 558px;
-   }
-}
+
+
+
+
+
+
 /*large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   .container .jumbotron{
     background: url("/image/jumbotron3.jpg") no-repeat;
-    height: 540px;
+    height: 460px;
   }
  }
+
+
+ /* Medium devices (desktops, 992px and up)*/
+ @media (min-width: 992px) and (max-width: 1199px){
+   #logoImg{
+     width: 80px;
+     height: 80px;
+     margin: 5px 5px 5px 0px;
+    }
+    .container .jumbotron{
+      background: url("/image/jumbotron3.jpg") no-repeat;
+      height: 558px;
+    }
+ }
+
+ /* Small devices (tablets, 768px and up)*/
+ @media (min-width: 768px) and (max-width: 991px) {
+   .container .jumbotron{
+     background: url("/image/jumbotron3.jpg") no-repeat;
+     height: 432px;
+   }
+  }
+
+  /* Extra Small devices */
+  @media (max-width: 767px)
+  {
+    .navbar-brand{
+      padding-top: 10px;
+      height: 80px;
+    }
+    .navbar-brand h1{
+      padding-top: 10px;
+      font-size: 4vw;
+    }
+    .navbar-brand p{
+      text-transform: uppercase;
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img{
+      height: 20px;
+    }
+    #menu-tile,#specials-tile,#map-tile{
+      height: 200px;
+      width: 93%;
+      margin: 0 auto 15px;
+    }
+    .container .jumbotron{
+      padding: 0px 0px;
+    }
+    /*footer*/
+    .panel-footer section{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .panel-footer section:nth-child(3){
+      margin-bottom: 0;
+    }
+
+    .panel-footer hr{
+      width: 50%;
+    }
+    /*end of footer*/
+  }
+
+  /* Super extra small*/
+  @media (max-width: 479px){
+    .navbar-brand h1{
+      font-size: 6vw;
+    }
+  }
