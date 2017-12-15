@@ -198,6 +198,8 @@ body{
 }
 
 /*end home page*/
+
+/* categories page*/
 .category-tile{
   position: relative;
   width: 200px;
@@ -231,10 +233,62 @@ body{
   margin-bottom: 60px;
 }
 
-/* categories page*/
-
-
 /* end of categories page*/
+
+/* single category page*/
+.menu-item-tile{
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr{
+border-color: rgb(190, 190, 190) ;
+}
+
+.menu-item-tile .menu-item-price{
+  font-size: 1.1em;
+  text-align: right;
+  margin-right: -15px;
+  margin-top: -15px;
+}
+
+.menu-item-tile .menu-item-price span{
+  font-size: .7em;
+}
+
+.menu-item-photo{
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(228, 232, 240);
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.menu-item-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+}
+
+.menu-item-description{
+  padding-right: 30px;
+}
+
+h3.menu-item-title{
+  margin: 0 0 10px;
+}
+
+.menu-item-details{
+  font-size: .9em;
+  font-style: italic;
+}
+
+/*end of single category page*/
 
 
 @media (max-width: 992px){
@@ -328,6 +382,14 @@ body{
     .panel-footer hr{
       width: 50%;
     }
+
+  .menu-item-photo{
+    margin-right: auto;
+  }
+
+  .menu-item-tile .menu-item-price ,.menu-item-title, .menu-item-description{
+    text-align: center;
+  }
     /*end of footer*/
   }
 
