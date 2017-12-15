@@ -32,8 +32,8 @@ body{
 
   font-family: 'Cormorant Upright';
   color: rgb(0, 0, 0);
-  font-size: 1.8em;
-  font-weight: 500;
+  font-size: 1.9em;
+  font-weight: 600;
   text-shadow: .5px .5px .5px rgb(119, 118, 102);
   margin-top: 0px;
   margin-bottom: 0px;
@@ -169,6 +169,7 @@ body{
 
 #menu-tile:hover,#specials-tile:hover,#map-tile:hover{
   box-shadow: 0 1px 5px 1px rgb(155, 169, 171);
+
 }
 
 #menu-tile{
@@ -197,7 +198,43 @@ body{
 }
 
 /*end home page*/
+.category-tile{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid rgb(228, 232, 240);
+  margin: 0 auto 40px;
+  border-radius: 20px;
+}
 
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'lora' serif;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+}
+
+.category-tile:hover{
+  box-shadow: 0 1px 5px 1px rgb(155, 169, 171);
+
+}
+
+#menu-categories-title + div{
+  margin-bottom: 60px;
+}
+
+/* categories page*/
+
+
+/* end of categories page*/
 
 
 @media (max-width: 992px){
@@ -298,5 +335,14 @@ body{
   @media (max-width: 479px){
     .navbar-brand h1{
       font-size: 6vw;
+    }
+
+    .col-xxs-12{
+      position: relative;
+      min-height: 1px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
     }
   }
