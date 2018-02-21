@@ -288,12 +288,13 @@ h3.menu-item-title{
   font-style: italic;
 }
 
+
 /*end of single category page*/
 
 
 @media (max-width: 992px){
   #collapsable-nav li{
-    margin-top: 15px;
+    margin-top: 27px;
   }
   #collapsable-nav a{
       font-size: 1.2em;
